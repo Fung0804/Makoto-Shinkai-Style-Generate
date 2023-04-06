@@ -78,7 +78,7 @@ data:
     train:
       target: ldm.data.simple.hf_dataset
       params:
-        name: Fung804/makoto-shinkai-picture
+        name: lambdalabs/pokemon-blip-captions
         image_transforms:
         - target: torchvision.transforms.Resize
           params:
@@ -92,10 +92,10 @@ data:
       target: ldm.data.simple.TextOnly
       params:
         captions:
-        - "A Girl watching the sky from classroomt
-        - "A garden"
-        - "A train on the train platform"
-        - "Bad weather"
+        - "A pokemon with green eyes, large wings, and a hat"
+        - "A cute bunny rabbit"
+        - "Yoda"
+        - "An epic landscape photo of a mountain"
         output_size: 512
         n_gpus: 2 # small hack to sure we see all our samples
 
